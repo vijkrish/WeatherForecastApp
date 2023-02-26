@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+<!--    <domain-config cleartextTrafficPermitted="true">-->
+<!--        <domain includeSubdomains="true">vijaysai-hw8.us-east-2.elasticbeanstalk.com</domain>-->
+<!--        <domain includeSubdomains="true">neuroimagetest:8081</domain>-->
+<!--        <domain includeSubdomains="true">neuroimagetest.usc.edu</domain>-->
+<!--        <domain includeSubdomains="true">neuroimagetest</domain>-->
+<!--        <domain includeSubdomains="true">ip-api.com</domain>-->
+<!--        <domain includeSubdomains="true">*</domain>-->
+<!--    </domain-config>-->
+    <base-config cleartextTrafficPermitted="true"/>
+</network-security-config>

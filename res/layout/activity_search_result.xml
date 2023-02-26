@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/swipeTabs"
+    tools:context=".SearchResult">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/search_result_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card1"
+        android:layout_width="380dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="552dp"
+        android:background="@drawable/card_layout"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="showDetailedWeather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/search_result_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="101dp"
+            android:layout_marginLeft="101dp"
+            android:layout_marginTop="127dp"
+            android:layout_marginEnd="145dp"
+            android:layout_marginRight="145dp"
+            android:layout_marginBottom="16dp"
+            android:baselineAligned="false"
+            android:text="Los Angeles, CA, USA"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/search_result_icon"
+            android:layout_width="138dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginRight="177dp"
+            android:layout_marginBottom="35dp"
+            android:baselineAlignBottom="false"
+            android:baselineAligned="false"
+            android:layerType="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/weather_sunny" />
+
+        <TextView
+            android:id="@+id/search_result_summary"
+            android:layout_width="75dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="203dp"
+            android:layout_marginLeft="203dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginRight="102dp"
+            android:layout_marginBottom="39dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:text="Clear"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/search_result_temperature"
+            android:layout_width="81dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:layout_marginBottom="83dp"
+            android:text="59&#xb0;F"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="336dp"
+            android:layout_marginLeft="336dp"
+            android:layout_marginTop="123dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/information_outline" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="170dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginRight="224dp"
+        android:layout_marginBottom="724dp"
+        android:text="Search Result"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="382dp"
+        android:layout_height="295dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="454dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="97dp"
+        android:background="@drawable/card_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tableSpace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="59dp">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="11/15/2019"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"></TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:foregroundGravity="bottom"
+                    app:srcCompat="@mipmap/weather_cloudy">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="61dp"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="54"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"></TextView>
+
+                <TextView
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="70"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"></TextView>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/card2"
+        android:layout_width="379dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="407dp"
+        android:background="@drawable/card_layout"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            app:srcCompat="@mipmap/humidity" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            app:srcCompat="@mipmap/windspeed" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            app:srcCompat="@mipmap/visibility" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            app:srcCompat="@mipmap/pressure" />
+
+        <TextView
+            android:id="@+id/search_result_humidity"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-365dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="79%"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/search_result_windspeed"
+            android:layout_width="110dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="0.18 mph"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/search_result_visibility"
+            android:layout_width="99dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="9.32 km"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/search_result_pressure"
+            android:layout_width="87dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="1015.80 mb"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/search_result_humiditytxt"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-375dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Humidity"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/search_result_windspeedtxt"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Wind Speed"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/search_result_visibilitytxt"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Visibility"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/search_result_pressuretxt"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Pressure"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/favBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginLeft="312dp"
+        android:layout_marginTop="695dp"
+        android:layout_marginBottom="43dp"
+        android:onClick="handleFavoriteButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/map_marker_plus_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

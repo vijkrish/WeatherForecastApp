@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/search_result_toolbar"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <TextView
+        android:id="@+id/appbar_location_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Los Angeles, CA, US"
+        android:textColor="@color/whiteBackground"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="9dp"
+        tools:layout_editor_absoluteX="450dp"
+        tools:layout_conversion_absoluteWidth="291dp"
+        android:layout_gravity="left"
+        android:singleLine="true"/>
+
+</androidx.appcompat.widget.Toolbar>
